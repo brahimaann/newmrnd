@@ -1,0 +1,9 @@
+title = "newmrnd gitleaks config"
+
+[allowlist]
+description = "Global allowlist"
+paths = [
+  '''package-lock\.json''',
+  '''yarn\.lock''',
+  '''pnpm-lock\.yaml''',
+]
