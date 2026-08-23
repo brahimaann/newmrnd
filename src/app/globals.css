@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Andrew Elegant';
+  src: url('/fonts/andrew-elegant.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors */
+  --color-parchment: #e5e4e0;
+  --color-ink: #1d1d1d;
+  --color-paper: #ffffff;
+  --color-ash: #bfbebe;
+  --color-stone: #cdcdc9;
+  --color-iridescent-sphere: #facb00;
+
+  /* Typography — Font Families */
+  --font-sans: var(--font-inter), 'Ataero Retina OB Edition', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-andrew-elegant), 'Andrew Elegant', serif;
+  --font-serif: var(--font-andrew-elegant), 'Andrew Elegant', serif;
+  --font-ataero: var(--font-sans);
+
+  /* Typography — Scale */
+  --text-caption: 11px;
+  --text-caption--line-height: 1.4;
+  --text-caption--letter-spacing: 0.55px;
+
+  --text-body-sm: 15px;
+  --text-body-sm--line-height: 1.4;
+  --text-body-sm--letter-spacing: 0.15px;
+
+  --text-body: 18px;
+  --text-body--line-height: 1.4;
+  --text-body--letter-spacing: 0.23px;
+
+  --text-subheading: 34px;
+  --text-subheading--line-height: 1;
+  --text-subheading--letter-spacing: 0.44px;
+
+  --text-heading-sm: 46px;
+  --text-heading-sm--line-height: 1;
+  --text-heading-sm--letter-spacing: 0.6px;
+
+  --text-heading: 70px;
+  --text-heading--line-height: 0.8;
+  --text-heading--letter-spacing: 0.91px;
+
+  --text-heading-lg: 76px;
+  --text-heading-lg--line-height: 0.8;
+  --text-heading-lg--letter-spacing: 0.99px;
+
+  --text-display: 103px;
+  --text-display--line-height: 0.8;
+  --text-display--letter-spacing: 1.34px;
+
+  /* Spacing */
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-15: 15px;
+  --spacing-19: 19px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-46: 46px;
+  --spacing-76: 76px;
+  --spacing-119: 119px;
+
+  /* Border Radius */
+  --radius-md: 6.47619px;
+  --radius-lg: 9.52381px;
+  --radius-3xl: 30.4762px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --gradient-iridescent-sphere: linear-gradient(255deg, rgb(250, 203, 14), rgb(240, 107, 168) 30%, rgb(120, 186, 230) 65%, rgb(255, 255, 255));
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-parchment);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default focus outlines to match aesthetic, handle focus gracefully later */
+*:focus-visible {
+  outline: 1px solid var(--color-ash);
+  outline-offset: 2px;
 }
