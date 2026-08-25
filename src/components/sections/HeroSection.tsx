@@ -22,7 +22,7 @@ export function HeroSection() {
           
           <nav className="flex flex-col gap-[10px]">
             <GhostLink href="/timeline">Explore Timeline</GhostLink>
-            <GhostLink href="/roster">Talent Roster</GhostLink>
+            <GhostLink href="/team">Team</GhostLink>
             <GhostLink href="/events">Upcoming Events</GhostLink>
           </nav>
         </div>

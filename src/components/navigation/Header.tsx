@@ -26,8 +26,8 @@ export function Header() {
         <Link href="/timeline" className="text-[11px] uppercase tracking-[0.05em] text-(--color-ink) hover:underline decoration-1 underline-offset-4 transition-all">
           Timeline
         </Link>
-        <Link href="/roster" className="text-[11px] uppercase tracking-[0.05em] text-(--color-ink) hover:underline decoration-1 underline-offset-4 transition-all">
-          Roster
+        <Link href="/team" className="text-[11px] uppercase tracking-[0.05em] text-(--color-ink) hover:underline decoration-1 underline-offset-4 transition-all">
+          Team
         </Link>
         <Link href="/events" className="text-[11px] uppercase tracking-[0.05em] text-(--color-ink) hover:underline decoration-1 underline-offset-4 transition-all">
           Events

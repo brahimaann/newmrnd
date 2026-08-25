@@ -7,18 +7,18 @@ import { Talent } from '@/types/sanity.types';
 import { GhostLink } from '@/components/ui/GhostLink';
 import { urlForImage } from '@/sanity/image';
 
-interface RosterSectionProps {
+interface TeamSectionProps {
   talents: Talent[];
 }
 
-export function RosterSection({ talents }: RosterSectionProps) {
+export function TeamSection({ talents }: TeamSectionProps) {
   return (
-    <section id="roster" className="flex-1 py-[30px] md:py-[50px] px-[20px] md:px-[30px] bg-(--color-parchment) flex flex-col justify-center">
+    <section id="team" className="flex-1 py-[30px] md:py-[50px] px-[20px] md:px-[30px] bg-(--color-parchment) flex flex-col justify-center">
       <div className="max-w-[1400px] mx-auto w-full my-auto">
-        <SectionLabel>Talent Roster</SectionLabel>
+        <SectionLabel>Team</SectionLabel>
         
         {talents.length === 0 && (
-          <p className="text-(--color-ink) font-mono text-[13px] mt-[40px]">No talent roster found in Sanity.</p>
+          <p className="text-(--color-ink) font-mono text-[13px] mt-[40px]">No team members found in Sanity.</p>
         )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px] md:gap-[30px] mt-[24px]">
@@ -62,3 +62,6 @@ export function RosterSection({ talents }: RosterSectionProps) {
     </section>
   );
 }
+
+// Backward compatibility export
+export const RosterSection = TeamSection;

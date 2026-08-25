@@ -1,15 +1,5 @@
-import { RosterSection } from '@/components/sections/RosterSection';
-import { client } from '@/sanity/client';
-import { getTalentRosterQuery } from '@/sanity/queries';
+import { redirect } from 'next/navigation';
 
-export const revalidate = 60;
-
-export default async function RosterPage() {
-  const talents = await client.fetch(getTalentRosterQuery);
-
-  return (
-    <main className="flex-1 flex flex-col pt-[70px] md:pt-[80px]">
-      <RosterSection talents={talents} />
-    </main>
-  );
+export default function RosterPage() {
+  redirect('/team');
 }
