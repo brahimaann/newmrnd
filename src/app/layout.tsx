@@ -26,8 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       className={`${inter.variable} ${andrewElegant.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-sans bg-(--color-parchment)">
+      <body className="min-h-full flex flex-col font-sans bg-(--color-parchment)" suppressHydrationWarning>
         <Header />
         <div className="flex-1 flex flex-col">
           {children}
