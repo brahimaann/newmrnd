@@ -258,7 +258,7 @@ export function EventsSection({ events = [] }: EventsSectionProps) {
   };
 
   return (
-    <section id="events" className="pt-[20px] md:pt-[30px] pb-[76px] md:pb-[119px] px-[20px] md:px-[30px] bg-(--color-parchment) min-h-screen">
+    <section id="events" className="flex-1 pt-[10px] md:pt-[20px] pb-[40px] md:pb-[60px] px-[20px] md:px-[30px] bg-(--color-parchment)">
       <div className="max-w-[1400px] mx-auto w-full flex flex-col gap-[40px] md:gap-[50px]">
         
         {/* Header Section (Moved up with Preview Card) */}

@@ -8,7 +8,7 @@ export default async function TimelinePage() {
   const events = await client.fetch(getTimelineEventsQuery);
 
   return (
-    <main className="min-h-screen pt-[100px]">
+    <main className="flex-1 flex flex-col pt-[70px] md:pt-[80px]">
       <TimelineSection events={events} />
     </main>
   );

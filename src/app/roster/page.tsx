@@ -8,7 +8,7 @@ export default async function RosterPage() {
   const talents = await client.fetch(getTalentRosterQuery);
 
   return (
-    <main className="min-h-screen pt-[100px]">
+    <main className="flex-1 flex flex-col pt-[70px] md:pt-[80px]">
       <RosterSection talents={talents} />
     </main>
   );
