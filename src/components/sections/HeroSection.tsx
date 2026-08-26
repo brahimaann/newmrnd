@@ -7,7 +7,10 @@ import { ArrowDown } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-between px-[24px] md:px-[40px] pt-[110px] pb-[36px] overflow-hidden">
+    <section 
+      suppressHydrationWarning 
+      className="relative min-h-screen flex flex-col justify-between px-[24px] md:px-[40px] pt-[110px] pb-[36px] overflow-hidden"
+    >
       {/* Dynamic 3D Shader Gradient Background */}
       <ShaderGradientBackground 
         type="waterPlane"

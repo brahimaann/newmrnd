@@ -47,7 +47,10 @@ export function TimelineSection({ events }: TimelineSectionProps) {
   const displayEvents = events && events.length > 0 ? events : DEFAULT_TIMELINE_EVENTS;
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-[20px] md:px-[30px] py-[60px] md:py-[80px] bg-(--color-parchment)">
+    <section 
+      suppressHydrationWarning 
+      className="min-h-screen flex flex-col items-center justify-center px-[20px] md:px-[30px] py-[60px] md:py-[80px] bg-(--color-parchment)"
+    >
       <div className="w-full max-w-[760px] mx-auto my-auto flex flex-col items-center">
         
         {/* Minimalist Editorial Timeline Stream */}

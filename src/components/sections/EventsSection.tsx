@@ -258,7 +258,11 @@ export function EventsSection({ events = [] }: EventsSectionProps) {
   };
 
   return (
-    <section id="events" className="flex-1 pt-[10px] md:pt-[20px] pb-[40px] md:pb-[60px] px-[20px] md:px-[30px] bg-(--color-parchment)">
+    <section 
+      id="events" 
+      suppressHydrationWarning 
+      className="min-h-screen pt-[40px] md:pt-[60px] pb-[60px] md:pb-[80px] px-[20px] md:px-[30px] bg-(--color-parchment)"
+    >
       <div className="max-w-[1400px] mx-auto w-full flex flex-col gap-[40px] md:gap-[50px]">
         
         {/* Header Section (Moved up with Preview Card) */}
