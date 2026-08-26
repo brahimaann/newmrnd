@@ -55,10 +55,10 @@ export function Footer() {
       suppressHydrationWarning 
       className="w-full min-h-[85vh] flex flex-col justify-between bg-(--color-parchment) text-(--color-ink) pt-[60px] md:pt-[90px] pb-0 border-t border-(--color-ash) relative overflow-hidden shrink-0"
     >
-      <div className="max-w-[1400px] mx-auto px-[24px] md:px-[40px]">
+      <div className="max-w-[1400px] mx-auto w-full px-[24px] md:px-[40px]">
         
         {/* Top Grid: Stay in the know + Navigation Columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-[40px] md:gap-[60px] pb-[50px] md:pb-[70px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-[40px] md:gap-[60px] pb-[40px] md:pb-[60px]">
           
           {/* Left Column: Stay in the know & Contact Form */}
           <div className="lg:col-span-6 flex flex-col items-start pr-0 lg:pr-[30px]">
@@ -182,7 +182,7 @@ export function Footer() {
         {/* Middle Meta Row */}
         <div 
           suppressHydrationWarning
-          className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-[18px] border-t border-(--color-ash)/60 text-[11px] font-mono uppercase tracking-wider text-(--color-ash) gap-[12px]"
+          className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-[16px] border-t border-(--color-ash)/60 text-[11px] font-mono uppercase tracking-wider text-(--color-ash) gap-[12px]"
         >
           <div className="flex items-center gap-[16px] flex-wrap">
             <span className="inline-flex items-center gap-[4px] text-(--color-ink)/80">
@@ -202,16 +202,27 @@ export function Footer() {
 
       </div>
 
-      {/* Massive Bold OUTWAY-Style Brand Wordmark with Bottom Bleed / Cutoff */}
-      <div className="w-full select-none pointer-events-none overflow-hidden flex justify-center items-end mt-[6px]">
-        <span 
-          className="text-[17.5vw] sm:text-[18vw] md:text-[18.2vw] font-black uppercase text-(--color-ink) leading-[0.72] tracking-[-0.045em] whitespace-nowrap block text-center transform translate-y-[28%] md:translate-y-[30%]"
-          style={{
-            fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-          }}
+      {/* Squeezed Edge-to-Edge MODERN RENAISSANCE Banner Sitting Completely at the Bottom */}
+      <div className="w-full select-none pointer-events-none overflow-hidden flex items-end mt-[12px] mb-0 pb-0">
+        <svg 
+          viewBox="0 0 1600 135" 
+          className="w-full h-auto block align-bottom" 
+          preserveAspectRatio="none"
+          aria-label="MODERN RENAISSANCE"
         >
-          MODERN RENAISSANCE
-        </span>
+          <text 
+            x="50%" 
+            y="94%" 
+            textAnchor="middle" 
+            className="fill-(--color-ink) uppercase font-normal tracking-[0.02em]"
+            style={{
+              fontSize: '138px',
+              fontFamily: 'var(--font-andrew-elegant), "Andrew Elegant", serif, system-ui',
+            }}
+          >
+            MODERN RENAISSANCE
+          </text>
+        </svg>
       </div>
 
     </footer>
