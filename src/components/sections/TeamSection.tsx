@@ -13,7 +13,7 @@ interface TeamSectionProps {
 
 export function TeamSection({ talents }: TeamSectionProps) {
   return (
-    <section id="team" className="flex-1 py-[30px] md:py-[50px] px-[20px] md:px-[30px] bg-(--color-parchment) flex flex-col justify-center">
+    <section id="team" className="min-h-screen py-[60px] md:py-[80px] px-[20px] md:px-[30px] bg-(--color-parchment) flex flex-col justify-center">
       <div className="max-w-[1400px] mx-auto w-full my-auto">
         <SectionLabel>Team</SectionLabel>
         

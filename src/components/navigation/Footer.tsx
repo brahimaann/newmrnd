@@ -51,8 +51,9 @@ export function Footer() {
 
   return (
     <footer 
+      id="footer"
       suppressHydrationWarning 
-      className="w-full bg-(--color-parchment) text-(--color-ink) pt-[60px] md:pt-[90px] pb-0 border-t border-(--color-ash) relative overflow-hidden shrink-0"
+      className="w-full min-h-[85vh] flex flex-col justify-between bg-(--color-parchment) text-(--color-ink) pt-[60px] md:pt-[90px] pb-0 border-t border-(--color-ash) relative overflow-hidden shrink-0"
     >
       <div className="max-w-[1400px] mx-auto px-[24px] md:px-[40px]">
         
