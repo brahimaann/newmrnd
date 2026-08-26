@@ -50,7 +50,10 @@ export function Footer() {
   };
 
   return (
-    <footer className="w-full bg-(--color-parchment) text-(--color-ink) pt-[60px] md:pt-[90px] pb-0 border-t border-(--color-ash) relative overflow-hidden shrink-0">
+    <footer 
+      suppressHydrationWarning 
+      className="w-full bg-(--color-parchment) text-(--color-ink) pt-[60px] md:pt-[90px] pb-0 border-t border-(--color-ash) relative overflow-hidden shrink-0"
+    >
       <div className="max-w-[1400px] mx-auto px-[24px] md:px-[40px]">
         
         {/* Top Grid: Stay in the know + Navigation Columns */}
@@ -176,12 +179,15 @@ export function Footer() {
         </div>
 
         {/* Middle Meta Row */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-[18px] border-t border-(--color-ash)/60 text-[11px] font-mono uppercase tracking-wider text-(--color-ash) gap-[12px]">
+        <div 
+          suppressHydrationWarning
+          className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-[18px] border-t border-(--color-ash)/60 text-[11px] font-mono uppercase tracking-wider text-(--color-ash) gap-[12px]"
+        >
           <div className="flex items-center gap-[16px] flex-wrap">
             <span className="inline-flex items-center gap-[4px] text-(--color-ink)/80">
               <Globe className="w-[12px] h-[12px]" /> 🇺🇸 EN
             </span>
-            <span>© {new Date().getFullYear()}. All Rights Reserved.</span>
+            <span suppressHydrationWarning>© 2026. All Rights Reserved.</span>
           </div>
 
           <div className="flex items-center gap-[16px] flex-wrap text-(--color-ink)/80">
