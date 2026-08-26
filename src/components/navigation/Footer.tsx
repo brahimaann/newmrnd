@@ -53,7 +53,7 @@ export function Footer() {
     <footer 
       id="footer"
       suppressHydrationWarning 
-      className="w-full min-h-[85vh] flex flex-col justify-between bg-(--color-parchment) text-(--color-ink) pt-[60px] md:pt-[90px] pb-0 border-t border-(--color-ash) relative overflow-hidden shrink-0"
+      className="w-full min-h-screen flex flex-col justify-between bg-(--color-parchment) text-(--color-ink) pt-[60px] md:pt-[90px] pb-0 border-t border-(--color-ash) relative overflow-hidden shrink-0"
     >
       <div className="max-w-[1400px] mx-auto w-full px-[24px] md:px-[40px]">
         
@@ -202,27 +202,16 @@ export function Footer() {
 
       </div>
 
-      {/* Squeezed Edge-to-Edge MODERN RENAISSANCE Banner Sitting Completely at the Bottom */}
-      <div className="w-full select-none pointer-events-none overflow-hidden flex items-end mt-[12px] mb-0 pb-0">
-        <svg 
-          viewBox="0 0 1600 135" 
-          className="w-full h-auto block align-bottom" 
-          preserveAspectRatio="none"
-          aria-label="MODERN RENAISSANCE"
+      {/* Massive OUTWAY-Style Heavy Bold Display Wordmark with Sliced Bottom */}
+      <div className="w-full select-none pointer-events-none overflow-hidden flex justify-center items-end mt-auto">
+        <span 
+          className="text-[17.5vw] font-black uppercase text-(--color-ink) tracking-[-0.055em] leading-[0.72] whitespace-nowrap block text-center transform translate-y-[28%] md:translate-y-[32%]"
+          style={{
+            fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+          }}
         >
-          <text 
-            x="50%" 
-            y="94%" 
-            textAnchor="middle" 
-            className="fill-(--color-ink) uppercase font-normal tracking-[0.02em]"
-            style={{
-              fontSize: '138px',
-              fontFamily: 'var(--font-andrew-elegant), "Andrew Elegant", serif, system-ui',
-            }}
-          >
-            MODERN RENAISSANCE
-          </text>
-        </svg>
+          MODERN RENAISSANCE
+        </span>
       </div>
 
     </footer>
