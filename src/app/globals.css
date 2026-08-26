@@ -8,6 +8,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Break Label';
+  src: url('/fonts/break-label.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
   /* Colors */
   --color-parchment: #e5e4e0;
@@ -18,9 +26,11 @@
   --color-iridescent-sphere: #facb00;
 
   /* Typography — Font Families */
-  --font-sans: var(--font-inter), 'Ataero Retina OB Edition', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-break-label), 'Break Label', ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-andrew-elegant), 'Andrew Elegant', serif;
   --font-serif: var(--font-andrew-elegant), 'Andrew Elegant', serif;
+  --font-body: var(--font-break-label), 'Break Label', sans-serif;
+  --font-paragraph: var(--font-break-label), 'Break Label', sans-serif;
   --font-ataero: var(--font-sans);
 
   /* Typography — Scale */
@@ -85,8 +95,13 @@ html {
 body {
   background-color: var(--color-parchment);
   color: var(--color-ink);
+  font-family: var(--font-break-label), 'Break Label', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p, .font-paragraph {
+  font-family: var(--font-break-label), 'Break Label', sans-serif !important;
 }
 
 /* Remove default focus outlines to match aesthetic */

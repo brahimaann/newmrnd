@@ -14,9 +14,9 @@ export function HeroSection() {
       {/* Dynamic 3D Shader Gradient Background */}
       <ShaderGradientBackground 
         type="waterPlane"
-        color1="#dfd8cb"
-        color2="#1e1d1a"
-        color3="#c4bcac"
+        color1="#e86a38"
+        color2="#1b1a17"
+        color3="#dfd8cb"
       />
       
       <div className="z-10 w-full max-w-[1400px] mx-auto my-auto relative">
@@ -28,7 +28,10 @@ export function HeroSection() {
         </h1>
         
         <div className="flex flex-col md:flex-row gap-[24px] md:gap-[90px] items-start">
-          <p className="text-[15px] sm:text-[17px] md:text-[18px] leading-[1.45] tracking-[0.23px] text-(--color-ink) max-w-[420px] font-normal backdrop-blur-[2px] bg-(--color-parchment)/30 p-[8px] -ml-[8px] rounded-[4px]">
+          <p 
+            style={{ fontFamily: 'var(--font-break-label), "Break Label", sans-serif' }}
+            className="text-[17px] sm:text-[19px] md:text-[20px] leading-[1.45] tracking-[0.2px] text-(--color-ink) max-w-[440px] font-normal backdrop-blur-[2px] bg-(--color-parchment)/30 p-[8px] -ml-[8px] rounded-[4px]"
+          >
             A creative collective and multimedia lifestyle brand empowering emerging talent through culture, content, and community.
           </p>
           

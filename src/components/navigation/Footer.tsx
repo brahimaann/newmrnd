@@ -68,7 +68,10 @@ export function Footer() {
             >
               Stay in the know
             </h2>
-            <p className="text-[14px] md:text-[15px] text-(--color-ink)/75 max-w-[420px] leading-[1.5] mb-[24px]">
+            <p 
+              style={{ fontFamily: 'var(--font-break-label), "Break Label", sans-serif' }}
+              className="text-[15px] md:text-[16px] text-(--color-ink)/75 max-w-[420px] leading-[1.5] mb-[24px]"
+            >
               Subscribe for exclusive release announcements, private studio activations, and creative dispatches.
             </p>
 

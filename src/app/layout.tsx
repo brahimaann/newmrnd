@@ -16,6 +16,12 @@ const andrewElegant = localFont({
   display: "swap",
 });
 
+const breakLabel = localFont({
+  src: "./fonts/break-label.otf",
+  variable: "--font-break-label",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "MRND - Modern Renaissance",
   description: "A creative collective and multimedia lifestyle brand empowering emerging talent.",
@@ -25,10 +31,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${andrewElegant.variable} h-full antialiased`}
+      className={`${inter.variable} ${andrewElegant.variable} ${breakLabel.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-sans bg-(--color-parchment)" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col bg-(--color-parchment)" suppressHydrationWarning>
         <Header />
         <div className="flex-1 flex flex-col">
           {children}
