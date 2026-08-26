@@ -54,14 +54,14 @@ export function Footer() {
       <div className="max-w-[1400px] mx-auto px-[24px] md:px-[40px]">
         
         {/* Top Grid: Stay in the know + Navigation Columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-[40px] md:gap-[60px] pb-[60px] md:pb-[80px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-[40px] md:gap-[60px] pb-[50px] md:pb-[70px]">
           
           {/* Left Column: Stay in the know & Contact Form */}
-          <div className="lg:col-span-5 flex flex-col items-start pr-0 lg:pr-[20px]">
+          <div className="lg:col-span-6 flex flex-col items-start pr-0 lg:pr-[30px]">
             <h2 className="text-[36px] sm:text-[44px] md:text-[52px] font-normal leading-[1.05] tracking-[-0.02em] mb-[16px]">
               Stay in the know
             </h2>
-            <p className="text-[14px] md:text-[15px] text-(--color-ink)/75 max-w-[380px] leading-[1.5] mb-[24px]">
+            <p className="text-[14px] md:text-[15px] text-(--color-ink)/75 max-w-[420px] leading-[1.5] mb-[24px]">
               Subscribe for exclusive release announcements, private studio activations, and creative dispatches.
             </p>
 
@@ -140,8 +140,8 @@ export function Footer() {
             )}
           </div>
 
-          {/* Right Columns: Structured Navigation */}
-          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-[30px] md:gap-[40px] pt-[10px]">
+          {/* Right Columns: Clean 2-Column Navigation */}
+          <div className="lg:col-span-6 grid grid-cols-2 gap-[30px] md:gap-[50px] pt-[10px]">
             
             {/* Column 1: Collective */}
             <div className="flex flex-col gap-[14px]">
@@ -150,7 +150,7 @@ export function Footer() {
               </span>
               <ul className="flex flex-col gap-[10px] text-[12px] font-mono uppercase tracking-wider text-(--color-ink)/75">
                 <li><Link href="/timeline" className="hover:text-(--color-ink) transition-colors">Timeline</Link></li>
-                <li><Link href="/team" className="hover:text-(--color-ink) transition-colors">Team & Roster</Link></li>
+                <li><Link href="/team" className="hover:text-(--color-ink) transition-colors">Team</Link></li>
                 <li><Link href="/events" className="hover:text-(--color-ink) transition-colors">Events & Calendar</Link></li>
                 <li><Link href="/timeline" className="hover:text-(--color-ink) transition-colors">Sound Archive</Link></li>
                 <li><Link href="/#manifesto" className="hover:text-(--color-ink) transition-colors">Manifesto</Link></li>
@@ -171,31 +171,17 @@ export function Footer() {
               </ul>
             </div>
 
-            {/* Column 3: Support & Security */}
-            <div className="flex flex-col gap-[14px] col-span-2 sm:col-span-1">
-              <span className="text-[12px] font-mono uppercase tracking-[0.1em] text-(--color-ink) font-bold">
-                SUPPORT & TRUST
-              </span>
-              <ul className="flex flex-col gap-[10px] text-[12px] font-mono uppercase tracking-wider text-(--color-ink)/75">
-                <li><a href="mailto:contact@newmrnd.dev" className="hover:text-(--color-ink) transition-colors">General Inquiry</a></li>
-                <li><a href="mailto:booking@newmrnd.dev" className="hover:text-(--color-ink) transition-colors">Talent Booking</a></li>
-                <li><a href="https://github.com/brahimaann/newmrnd/blob/main/SECURITY.md" target="_blank" rel="noopener noreferrer" className="hover:text-(--color-ink) transition-colors">Security Policy</a></li>
-                <li><a href="/.well-known/security.txt" target="_blank" rel="noopener noreferrer" className="hover:text-(--color-ink) transition-colors">RFC 9116 security.txt</a></li>
-                <li><a href="mailto:security@newmrnd.dev" className="hover:text-(--color-ink) transition-colors">Vulnerability Report</a></li>
-              </ul>
-            </div>
-
           </div>
 
         </div>
 
         {/* Middle Meta Row */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-[20px] border-t border-(--color-ash)/60 text-[11px] font-mono uppercase tracking-wider text-(--color-ash) gap-[12px]">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-[18px] border-t border-(--color-ash)/60 text-[11px] font-mono uppercase tracking-wider text-(--color-ash) gap-[12px]">
           <div className="flex items-center gap-[16px] flex-wrap">
             <span className="inline-flex items-center gap-[4px] text-(--color-ink)/80">
               <Globe className="w-[12px] h-[12px]" /> 🇺🇸 EN
             </span>
-            <span>© {new Date().getFullYear()} Modern Renaissance. All Rights Reserved.</span>
+            <span>© {new Date().getFullYear()}. All Rights Reserved.</span>
           </div>
 
           <div className="flex items-center gap-[16px] flex-wrap text-(--color-ink)/80">
@@ -209,10 +195,10 @@ export function Footer() {
 
       </div>
 
-      {/* Massive Bold OUTWAY-Style Brand Wordmark Banner */}
-      <div className="w-full select-none pointer-events-none overflow-hidden flex justify-center items-end mt-[10px]">
+      {/* Massive Bold OUTWAY-Style Brand Wordmark with Bottom Bleed / Cutoff */}
+      <div className="w-full select-none pointer-events-none overflow-hidden flex justify-center items-end mt-[6px]">
         <span 
-          className="text-[17vw] sm:text-[18vw] md:text-[19.5vw] font-black uppercase text-(--color-ink) leading-[0.74] tracking-[-0.04em] whitespace-nowrap block text-center transform translate-y-[2%]"
+          className="text-[17.5vw] sm:text-[18vw] md:text-[18.2vw] font-black uppercase text-(--color-ink) leading-[0.72] tracking-[-0.045em] whitespace-nowrap block text-center transform translate-y-[28%] md:translate-y-[30%]"
           style={{
             fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
           }}
