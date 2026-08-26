@@ -53,7 +53,7 @@ export function Footer() {
     <footer 
       id="footer"
       suppressHydrationWarning 
-      className="w-full min-h-screen flex flex-col justify-between bg-(--color-parchment) text-(--color-ink) pt-[60px] md:pt-[90px] pb-0 border-t border-(--color-ash) relative overflow-hidden shrink-0"
+      className="w-full min-h-[90vh] flex flex-col justify-between bg-(--color-parchment) text-(--color-ink) pt-[60px] md:pt-[90px] pb-0 border-t border-(--color-ash) relative overflow-hidden shrink-0"
     >
       <div className="max-w-[1400px] mx-auto w-full px-[24px] md:px-[40px]">
         
@@ -62,7 +62,10 @@ export function Footer() {
           
           {/* Left Column: Stay in the know & Contact Form */}
           <div className="lg:col-span-6 flex flex-col items-start pr-0 lg:pr-[30px]">
-            <h2 className="text-[36px] sm:text-[44px] md:text-[52px] font-normal leading-[1.05] tracking-[-0.02em] mb-[16px]">
+            <h2 
+              style={{ fontFamily: 'var(--font-andrew-elegant), "Andrew Elegant", Georgia, serif' }}
+              className="text-[40px] sm:text-[48px] md:text-[56px] font-normal leading-[1.05] tracking-[-0.02em] mb-[16px]"
+            >
               Stay in the know
             </h2>
             <p className="text-[14px] md:text-[15px] text-(--color-ink)/75 max-w-[420px] leading-[1.5] mb-[24px]">
@@ -202,16 +205,28 @@ export function Footer() {
 
       </div>
 
-      {/* Massive OUTWAY-Style Heavy Bold Display Wordmark with Sliced Bottom */}
-      <div className="w-full select-none pointer-events-none overflow-hidden flex justify-center items-end mt-auto">
-        <span 
-          className="text-[17.5vw] font-black uppercase text-(--color-ink) tracking-[-0.055em] leading-[0.72] whitespace-nowrap block text-center transform translate-y-[28%] md:translate-y-[32%]"
-          style={{
-            fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-          }}
+      {/* Squeezed Edge-to-Edge OUTWAY-Style Wordmark with Clean Viewport Sliced Baseline */}
+      <div className="w-full select-none pointer-events-none overflow-hidden flex items-end mt-auto -mb-[3.2vw] sm:-mb-[3.8vw]">
+        <svg 
+          viewBox="0 0 1400 135" 
+          className="w-full h-[20vw] sm:h-[22vw] md:h-[24vw] block align-bottom" 
+          preserveAspectRatio="none"
+          aria-label="MODERN RENAISSANCE"
         >
-          MODERN RENAISSANCE
-        </span>
+          <text 
+            x="50%" 
+            y="76%" 
+            textAnchor="middle" 
+            className="fill-(--color-ink) font-black uppercase"
+            style={{
+              fontSize: '138px',
+              fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+              letterSpacing: '-0.035em',
+            }}
+          >
+            MODERN RENAISSANCE
+          </text>
+        </svg>
       </div>
 
     </footer>
