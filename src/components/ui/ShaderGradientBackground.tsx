@@ -80,20 +80,13 @@ export function ShaderGradientBackground({
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return (
-      <div 
-        className={`absolute inset-0 -z-10 pointer-events-none bg-(--color-parchment) ${className}`} 
-      />
-    );
-  }
-
   return (
     <div 
-      className={`absolute inset-0 -z-10 pointer-events-none overflow-hidden ${className}`}
+      suppressHydrationWarning
+      className={`absolute inset-0 -z-10 pointer-events-none overflow-hidden bg-(--color-parchment) ${className}`}
       aria-hidden="true"
     >
-      <DynamicShader type={type} color1={color1} color2={color2} color3={color3} />
+      {mounted && <DynamicShader type={type} color1={color1} color2={color2} color3={color3} />}
       
       {/* Subtle grain/parchment diffusion */}
       <div className="absolute inset-0 bg-(--color-parchment)/25 backdrop-blur-[1px] pointer-events-none" />
